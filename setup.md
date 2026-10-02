@@ -1,9 +1,3 @@
-pip install -r requirements.txt
-pip install ipykernel
-python -m ipykernel install --user --name=book-recommender --display-name "Python (book-recommender)"
-
-
-
 # Build a Semantic Book Recommender with LLMs 
 
 1. Clean the data
@@ -22,4 +16,18 @@ Similarly, it uses an LLM to scan the text and figure out the emotional tone of 
 Finally, all of this is wrapped into a simple web app (built with Gradio, a tool for quickly making interactive UIs). A user can type a natural-language query, optionally filter by fiction/non-fiction or by emotional tone, and get book recommendations that actually match what they meant.
 
 In short: A "smart" book recommender — one that understands intent and emotional tone — using embeddings, vector search, and LLMs, all wrapped in a simple web interface. It's a good practical example of how modern AI search/recommendation systems work under the hood.
+
+# Project run command
+
+python gradio-dashboard.py
+
+http://127.0.0.1:7860/
+
+
+# Commands
+pip install -r requirements.txt
+pip install ipykernel
+python -m ipykernel install --user --name=book-recommender --display-name "Python (book-recommender)"
+
+
 
